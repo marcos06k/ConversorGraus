@@ -20,12 +20,16 @@
             <!-- section que servirá como centralizador e fundo em cinza-->
             <section class="section_flex_conversao">
 
+
                 <!-- div que conterá o campo input da temperatura -->
+
                 <div class="div_valor_input">
+
                     <form id="form_valor">
+
                         <label for="input_temperatura">Temperatura:</label>
                         <input id="input_temperatura" type="text">
-                    </form>
+
                 </div>
                 <!-- div_valor_input -->
 
@@ -33,29 +37,29 @@
                 <div class="div_escolha">
                     <!-- "DE" -->
                     <div>
-                        <form id="form_escolha_de">
-                            <label for="de">De:</label>
-                            <select id="de">
-                                <option selected disabled>Escolha:</option>
-                                <option value="Celsius">Celsius (C)</option>
-                                <option value="Fahrenheit">Fahrenheit (F)</option>
-                                <option value="Kelvin">Kelvin (K)</option>
-                            </select>
-                        </form>
+
+                        <label for="de">De:</label>
+                        <select id="de">
+                            <option selected disabled>Escolha:</option>
+                            <option value="celsiusDe">Celsius (C)</option>
+                            <option value="fahrenheitDe">Fahrenheit (F)</option>
+                            <option value="kelvinDe">Kelvin (K)</option>
+                        </select>
+
                     </div>
                     <!-- /div_para -->
 
                     <!-- "PARA" -->
                     <div>
-                        <form id="form_escolha_para">
-                            <label for="para">Para:</label>
-                            <select id="para">
-                                <option selected disabled>Escolha:</option>
-                                <option value="Celsius">Celsius (C)</option>
-                                <option value="Fahrenheit">Fahrenheit (F)</option>
-                                <option value="Kelvin">Kelvin (K)</option>
-                            </select>
-                        </form>
+
+                        <label for="para">Para:</label>
+                        <select id="para">
+                            <option selected disabled>Escolha:</option>
+                            <option value="celsiusPara">Celsius (C)</option>
+                            <option value="fahrenheitPara">Fahrenheit (F)</option>
+                            <option value="kelvinPara">Kelvin (K)</option>
+                        </select>
+
                     </div>
                     <!-- /div_para -->
                 </div>
@@ -63,13 +67,17 @@
 
                 <!-- div que conterá o botao -->
                 <div class="div_botao">
-                    <button id="botao">Calcular</button>
+                    <button id="botao" type="submit">Calcular</button>
                 </div>
                 <!-- div_botao -->
+                </form>
+
 
                 <!-- div que conterá o resultado da conversão -->
                 <div class="div_resultado">
-                    <div id="resultado"></div>
+                    <div id="resultado">
+                        
+                    </div>
                 </div>
                 <!-- div_resultado -->
             </section>
